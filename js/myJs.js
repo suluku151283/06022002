@@ -15,7 +15,7 @@ function firstQuestion(){
     $('.content').hide();
     Swal.fire({
         title: 'He luu cậu!',
-        text: 'Tớ có điều này muốn hỏi cậu nhớ phải trả lời thật lòng nhaaa.',
+        text: 'Tui có điều này muốn hỏi bà nhớ phải trả lời thật lòng nhaaa.',
         imageUrl: 'img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Tại vì cậu đẹp trai quá hehe :>>>>>>>>> ";
+    var text = " Tại vì ông đẹp trai quá hehe :>>>>>>>>> ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -96,7 +96,7 @@ $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: 'Nói cho tớ lí do cậu thích tớ đi :vvvv',
+        title: 'Nói cho tui lí do bà thích tui đi :vvvv',
         html: true,
         width: 900,
         padding: '3em',
@@ -121,8 +121,8 @@ $('#yes').click(function() {
                 width: 900,
                 confirmButtonText: 'Okiiiii lun <3',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Tớ biết mà ^^ Yêu cậu 3000 :33333',
-                text: "Còn chờ gì nữa mà không inbox cho tớ đi nào hehe :))))",
+                title: 'Tui biết mà ^^ Yêu bà 3000 :33333',
+                text: "Còn chờ gì nữa mà không inbox cho tui đi nào hehe :))))",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
                     window.location = 'https://www.instagram.com/khoa_pham_dang/';
