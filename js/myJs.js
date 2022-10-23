@@ -14,8 +14,8 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'He luu bà!',
-        text: 'Tui có điều này muốn hỏi bà nhớ phải trả lời thật lòng nhaaa.',
+        title: 'He luu em!',
+        text: 'Anh có điều này muốn hỏi em nhớ phải trả lời thật lòng nhaaa.',
         imageUrl: 'img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Tại vì ông đẹp trai quá hehe :>>>>>>>>> ";
+    var text = " Tại vì anh siu đẹp trai quá hehe :>>>>>>>>> ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -96,7 +96,7 @@ $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: 'Nói cho tui lí do bà thích tui đi :vvvv',
+        title: 'Nói cho tui lí do em thích anh đi :>>>>',
         html: true,
         width: 900,
         padding: '3em',
@@ -114,18 +114,18 @@ $('#yes').click(function() {
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi cho tui <3'
+        confirmButtonText: 'Gửi cho anh <3'
     }).then((result) => {
         if (result.value) {
             Swal.fire({
                 width: 900,
                 confirmButtonText: 'Okiiiii lun <3',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Tui biết mà ^^ Yêu bà 3000 :33333',
-                text: "Còn chờ gì nữa mà không inbox cho tui đi nào hehe :))))",
+                title: 'Anh biết mà ^^ Yêu em 3000 :33333',
+                text: "Còn chờ gì nữa mà không inbox cho anh đi nào hehe :))))",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
-                    window.location = 'https://www.instagram.com/khoa_pham_dang/';
+                    window.location = 'https://www.messenger.com/t/100010923274730';
                   }
             })
         }
